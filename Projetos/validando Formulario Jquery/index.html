@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>jquery</title>
+</head>
+<body>
+<style>
+	html,body{
+		height:100%;
+	}
+	.btn{
+		width:100%;
+		max-width:300px;
+		height:100px;
+		color:white;
+		font-size:24px;
+		text-align:center;
+		/* text-transform:uppercase; */
+		font-weight:bold;
+		font-family:helvetica;
+		line-height:100px;
+		background:#69a4d3;
+		cursor:pointer;
+		border-radius:10px;
+		position:absolute;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+	}
+	.bg{
+		display:none;
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		z-index:1;
+		background-color:rgba(0,0,0,0.6);
+	}
+	form{
+		background-color:white;
+		max-width:400px;
+		height:60%;
+		min-height:300px;
+		max-height:300px;
+		padding:90px 2%;
+		border:1px solid rgb(210,210,210);
+		position:absolute;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+	}
+
+	form input[type=text]{
+		width:100%;
+		height:48px;
+		line-height:48px;
+		padding-left:8px;
+		margin-bottom:20px;
+		border:1px solid #ccc;
+	}
+
+	form input[type=submit]{
+		width:100%;
+		height:48px;
+		color:white;
+		font-size:17px;
+		text-align:center;
+		text-transform:uppercase;
+		font-weight:bold;
+		font-family:helvetica;
+		line-height:48px;
+		background:#69a4d3;
+		border-radius:10px;
+		border:0;
+	}
+	.closeBtn{
+		width:32px;
+		height:32px;
+		border-radius:16px;
+		background-color:#69a4d3;;
+		color:#fff;
+		font-size:20px;
+		text-align: center;
+		line-height:32px;
+		position:absolute;
+		right:-16px;
+		top:-16px;
+		cursor:pointer;
+	}
+</style>
+		<!-- janela modal -->
+		<div class="bg">
+			<form id="form1">
+				<div class="closeBtn">X</div>
+				<input type="text" name="nome" placeholder="Nome Completo">
+				<input type="text" name="telefone" placeholder="telefone">
+				<input type="text" name="email" placeholder="E-mail">
+				<input type="submit" value="Enviar">
+
+			</form>
+		</div>
+		<div class="btn">entrar em Contato</div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/functios.js"></script>
+</body>
+</html>
