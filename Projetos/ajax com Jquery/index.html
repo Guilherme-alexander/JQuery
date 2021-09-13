@@ -26,9 +26,10 @@
         li{
             width:200px;
             height:200px;
-            border:2px solid black;
+            border:1px solid black;
+            border-radius:25px;
             list-style: none;
-            margin-top:10px;
+            margin:10px 8px;
         }
         input{
             border:0;
@@ -48,19 +49,20 @@
             padding:7px;
         }
         button{
-            width:80px;
+            width:150px;
             padding:7px;
             border:0;
             color:white;
-            background-color:rgb(100, 100, 100);
+            background-color: red;
+            /*background-color:rgb(100, 100, 100);*/
         }
     </style>
 
     <h2>Pokemon</h2>
-    <input type="number" value="25">
-    <button>Buscar ID</button>
-    <input id="reset" type="submit" value="reset List">
-    <input type="submit" value="Console valor Ajax">
+    <input type="number" value="0">
+    <button>Adicionar Pokémon</button>
+    <input id="reset" type="submit" value="Clear List">
+    <!-- <input type="submit" value="Console valor Ajax"> -->
     <ul class="container">
     </ul>
     
